@@ -11,11 +11,11 @@
 using namespace std;
 int main()
 {
-	int k;
+	int k_value;
     string value;
     list<int> vect;
     cout<<"Enter the value of k : ";
-	cin>>k;
+	cin>>k_value;
 	cout<<"Enter the set :";
 	cin>>value;
 	stringstream ss(value);
@@ -48,7 +48,7 @@ int main()
 						for(int h=0;h<size;h++)
 						{
 							//cout<<j<<" "<<k<<" "<<l<<"\n";
-							if(h!=j && h!=k && h!=l && ((ar[j]+ar[k]+(ar[l]*ar[h]))<=k))
+							if(h!=j && h!=k && h!=l && ((ar[j]+ar[k]+(ar[l]*ar[h]))<=k_value))
 								cout<<"{ "<<ar[j]<<ar[k]<<ar[l]<<ar[h]<<" }"<<"\n";
 						}
 					}
@@ -56,6 +56,7 @@ int main()
 			}
 		}
 	}
+	cout<<"code is running";
 return 0;
 }
 
