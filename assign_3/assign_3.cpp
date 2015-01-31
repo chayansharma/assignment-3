@@ -1,14 +1,18 @@
-/*
+/**
  * assign_3.cpp
- *
+ *	Program to print all the subsets {a,b,c,d} of the set S (input given by user)
+ *	such that a+b+c*d<=k where k is any integer given by user
  *  Created on: 30-Jan-2015
- *      Author: Chayan
+ *      Author: Chayan Sharma
  */
 #include<iostream>
 #include <string>
 #include <list>
 #include <sstream>
 using namespace std;
+/**
+ * Main function
+ */
 int main()
 {
 	int k_value;
@@ -20,7 +24,9 @@ int main()
 	cin>>value;
 	stringstream ss(value);
 	int i;
-
+	/**
+	 * Loop to extract the value in subset from the string
+	 */
 	while (ss >> i)
 	{
 	    vect.push_back(i);
@@ -35,6 +41,9 @@ int main()
 		ar[j]=vect.front();
 		vect.pop_front();
 	}
+	/**
+	 * Main loop to search and print the subset
+	 */
 	for(int j=0;j<size;j++)
 	{
 		for(int k=0;k<size;k++)
