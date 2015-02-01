@@ -58,14 +58,13 @@ int main()
 						{
 							//cout<<j<<" "<<k<<" "<<l<<"\n";
 							if(h!=j && h!=k && h!=l && ((ar[j]+ar[k]+(ar[l]*ar[h]))<=k_value))
-								cout<<"{ "<<ar[j]<<ar[k]<<ar[l]<<ar[h]<<" }"<<"\n";
+								cout<<"{ "<<ar[j]<<","<<ar[k]<<","<<ar[l]<<","<<ar[h]<<" }"<<"\n";
 						}
 					}
 				}
 			}
 		}
 	}
-	cout<<"code is running";
 return 0;
 }
 
